@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="2024-07-12-1-create-table-projects.xml" relativeToChangelogFile="true" />
+    <include file="2024-07-12-2-insert-projects.xml" relativeToChangelogFile="true" />
+    <include file="2024-07-12-3-create-table-user-project.xml" relativeToChangelogFile="true" />
+    <include file="2024-07-12-4-create-table-records.xml" relativeToChangelogFile="true" />
+    <include file="2024-07-12-5-insert-user-project.xml" relativeToChangelogFile="true" />
+    <include file="2024-07-12-6-insert-records.xml" relativeToChangelogFile="true" />
+
+</databaseChangeLog>

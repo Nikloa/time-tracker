@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-07-10-2-insert-users"
+               id="2024-07-10-2-insert-users" author="AN">
+        <insert tableName="users">
+            <column  name="username"  value="John Smith"/>
+            <column  name="password"  value="$2a$10$dDDPKlq8nZbDgGNMWRNaCugAqFcTEFPRouG05rWuPIP.JDR/1/Dny"/>
+            <column  name="email"  value="john@mail.com"/>
+            <column  name="roles"  value="ROLE_USER"/>
+        </insert>
+        <insert tableName="users">
+            <column  name="username"  value="Stan Edgar"/>
+            <column  name="password"  value="$2a$10$NXaKJb9xFMUBVjQT3S6i0OE71g19S2omIoGhhdmOfNN0ixoAZEBmu"/>
+            <column  name="email"  value="stan@mail.com"/>
+            <column  name="roles"  value="ROLE_ADMIN"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
